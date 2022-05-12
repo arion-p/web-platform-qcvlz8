@@ -1,0 +1,66 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+div.bkg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  background: #002557;
+  margin: 0;
+  overflow: hidden;
+}
+
+.bkg-slanted {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  bottom: -100%;
+  transform-origin: left center;
+  transform: rotate(30deg);
+  background: #cce5f1;
+  width: 100%;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  width:20rem;
+  height: 20rem;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 8px,
+    #f0f0f080 8px,
+    #f0f0f080 16px  
+  );
+}
+
+.circle.top {
+  top: 50%;
+  right: -6rem;
+  transform: translateY(-50%) translateY(-15rem);
+}
+
+.circle.bottom {
+  top: 50%;
+  left: -8rem;
+  transform: translateY(-50%) translateY(15rem);
+}
+
+.hero {
+  border-radius: 50%;
+  border-bottom-left-radius: 0;
+  width: 20rem;
+  height:20rem;
+  background: white;
+  transform: rotate(-45deg);
+  padding: 10px;
+}
+
+.hero.img {
+  
+}
